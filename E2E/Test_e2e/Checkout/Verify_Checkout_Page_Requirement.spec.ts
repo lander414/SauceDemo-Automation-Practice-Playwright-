@@ -2,7 +2,7 @@ import 'dotenv/config';
 import { test, expect } from '@playwright/test';
 
 
-test('Redirection to Checkout Page', async ({ page }) => {
+test('Verify Checkout Page Requirements', async ({ page }) => {
   const username = process.env.SAUCEDEMO_USERNAME ?? '';
   const password = process.env.SAUCEDEMO_PASSWORD ?? '';
 
