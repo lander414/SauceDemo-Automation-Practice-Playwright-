@@ -2,7 +2,7 @@ import 'dotenv/config';
 import { test, expect } from '@playwright/test';
 
 
-test('Verify Checkout Failed - First Name Missing', async ({ page }) => {
+test('Verify Checkout Failed - Last Name Missing', async ({ page }) => {
   const username = process.env.SAUCEDEMO_USERNAME ?? '';
   const password = process.env.SAUCEDEMO_PASSWORD ?? '';
 
