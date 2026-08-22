@@ -21,9 +21,9 @@ The purpose of this test plan is to define the scope, approach, environment, and
 - Checkout flow
 - Logout functionality
 - Basic UI and navigation checks
+- Responsive layout and page-load performance checks
 
 ### Out of Scope
-- Performance testing
 - Security penetration testing
 - Cross-browser compatibility beyond the targeted browser strategy
 - Payment gateway integration testing
