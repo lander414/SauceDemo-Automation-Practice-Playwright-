@@ -13,11 +13,23 @@ This repository contains a Playwright-based automation framework for the SauceDe
 
 ## Folder Structure
 ```text
-E2E/                  # Test suite files
-  Test_e2e/           # End-to-end test cases by feature
+tests/                # Test suite files organized by feature
+  Functional Testing/
+    LoginPage/
+    ProductPage/
+    Cart/
+    Checkout/
+    Sidebar/
+pages/                # Page Object Model classes and actions
+fixtures/             # Reusable Playwright fixtures
+utils/                # Shared helpers, constants, and test data
+locators/             # Centralized element locator definitions
+config/               # Environment-specific configuration
+test-data/            # External JSON/CSV test data
+reports/              # Generated HTML reports
+screenshots/          # Failure screenshots
 docs/                 # QA documentation set
-playwright-report/    # HTML test reports
-test-results/         # Test execution artifacts
+playwright.config.ts  # Playwright runner configuration
 ```
 
 ## Installation
@@ -45,7 +57,7 @@ npx playwright test --headed
 Run a specific test file:
 
 ```bash
-npx playwright test E2E/Test_e2e/login/login.spec.ts
+npx playwright test "tests/Functional Testing/LoginPage/login.spec.ts"
 ```
 
 ## Generating HTML Reports
