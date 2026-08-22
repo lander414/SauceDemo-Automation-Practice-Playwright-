@@ -77,6 +77,30 @@ Open the generated report locally:
 npx playwright show-report
 ```
 
+## Run Intelligence Dashboard
+The dashboard is a persistent local view over the latest Playwright artifacts. Start it once:
+
+```bash
+npm run dashboard
+```
+
+Then open http://localhost:4173. Run tests in another terminal as usual:
+
+```bash
+npm test
+```
+
+`npm test` also opens the dashboard automatically when the run finishes. A folder or individual test can be passed through the same command:
+
+```bash
+npm test -- "tests/Functional Testing/Checkout"
+npm test -- "tests/Functional Testing/Checkout/Verify_Checkout_Workflow.spec.ts"
+```
+
+The dashboard server is started automatically if it is not already running. You can also start it independently with `npm run dashboard` and leave it open while running tests.
+
+Playwright writes machine-readable results to `reports/test-results.json`. The dashboard refreshes automatically every 15 seconds, or immediately with the refresh button, and links failed tests to their screenshot, context log, and trace when available. The performance test also records its DOM-content-loaded measurement and budget for the performance chart.
+
 ## Screenshots
 Screenshots are captured automatically for failed or relevant test steps and can be reviewed in the test results directory.
 
@@ -98,9 +122,4 @@ This project is structured to support CI/CD workflows such as GitHub Actions. Th
 - [docs/Bug Report.md](docs/Bug%20Report.md)
 - [docs/Test Strategy.md](docs/Test%20Strategy.md)
 
-## Future Improvements
-- Expand cross-browser coverage
-- Add API testing for backend validation
-- Introduce data-driven testing
-- Integrate with GitHub Actions
-- Improve POM coverage and locator stability
+

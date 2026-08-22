@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SauceDemo / Run intelligence</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand"><span class="brand-mark">SD</span><span>SauceDemo <b>/</b> Run intelligence</span></div>
+    <div class="top-actions"><span id="run-time">No run loaded</span><button id="refresh" class="icon-button" title="Refresh test data" aria-label="Refresh test data">↻</button></div>
+  </header>
+  <main>
+    <section class="intro"><div><p class="eyebrow">QUALITY CONTROL ROOM</p><h1>Know what broke.<br><em>Know why.</em></h1><p class="lede">A focused view of the latest Playwright run, its evidence, and the performance budget that matters.</p></div><div class="run-badge"><span class="pulse"></span><span id="run-state">WAITING FOR RUN DATA</span></div></section>
+    <section class="metric-grid" id="metrics"></section>
+    <section class="content-grid">
+      <article class="panel chart-panel"><div class="panel-heading"><div><p class="eyebrow">PERFORMANCE</p><h2>Runtime by test</h2></div><span class="legend"><i></i> duration / ms</span></div><div id="duration-chart" class="bar-chart"></div></article>
+      <article class="panel chart-panel"><div class="panel-heading"><div><p class="eyebrow">BUDGET SIGNAL</p><h2>DOM content loaded</h2></div><span id="budget-label" class="budget-label">No metric</span></div><div class="gauge-wrap"><div class="gauge"><div id="gauge-value">--</div><small>ms</small></div><div class="gauge-copy"><strong id="gauge-status">Awaiting performance test</strong><p id="gauge-detail">Run the performance suite to populate this signal.</p></div></div></article>
+    </section>
+    <section class="section-heading"><div><p class="eyebrow">FAILURE TRIAGE</p><h2>Test results</h2></div><select id="status-filter" aria-label="Filter test results"><option value="all">All statuses</option><option value="failed">Failed</option><option value="passed">Passed</option><option value="skipped">Skipped</option></select></section>
+    <section id="results" class="results"></section>
+  </main>
+    <template id="result-template"><article class="result-row"><div class="status-dot"></div><div class="result-main"><div class="result-title"></div><div class="result-suite"></div><div class="result-location"></div><div class="result-error"></div><div class="result-links"></div></div><div class="result-duration"></div></article></template>
+  <script src="/dashboard.js"></script>
+</body>
+</html>

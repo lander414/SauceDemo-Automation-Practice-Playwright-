@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "node dashboard/run-tests.js",
+    "test:performance": "playwright test \"tests/Non-Functional Test/Performance\"",
+    "dashboard": "node dashboard/server.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lander414/SauceDemo-Automation-Practice.git"
