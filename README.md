@@ -20,6 +20,9 @@ tests/                # Test suite files organized by feature
     Cart/
     Checkout/
     Sidebar/
+  Non-Functional Test/   # Non-functional tests by concern
+    Responsive/
+    Performance/
 pages/                # Page Object Model classes and actions
 fixtures/             # Reusable Playwright fixtures
 utils/                # Shared helpers, constants, and test data
