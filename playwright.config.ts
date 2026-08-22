@@ -1,13 +1,12 @@
-import { defineConfig, devices } from '@playwright/test';
-import dotenv from 'dotenv';
-
-dotenv.config();
+import { defineConfig } from '@playwright/test';
+import { environment } from './config/env';
 
 export default defineConfig({
-  testDir: './e2e',
-  reporter: [['html', { outputFolder: 'playwright-report', open: 'never' }]],
+  testDir: './tests',
+  reporter: [['html', { outputFolder: 'reports', open: 'never' }]],
   use: {
-    baseURL: process.env.BASE_URL || 'https://www.saucedemo.com/',
+    baseURL: environment.baseUrl,
+    screenshot: 'only-on-failure',
     trace: 'on-first-retry',
   },
 });
