@@ -1,15 +1,17 @@
 # Test Execution Report
 
+This document records execution facts and should be refreshed after each meaningful regression run. The metrics below are a historical sample and must not be read as the current suite total.
+
 ## 1. Execution Summary
 - Project: SauceDemo Automation Practice
-- Execution Date: 2026-08-06
+- Execution Date: 2026-08-06 (historical snapshot)
 - Test Cycle: Regression and Functional Validation
-- Overall Result: Pass with minor observations
+- Overall Result: Historical sample; refresh required
 
 ## 2. Environment
 - Application URL: https://www.saucedemo.com/
-- Environment Type: Staging / Demo
-- Operating System: Windows 11
+- Environment Type: Public demo site
+- Operating System: Windows local baseline
 - Browser: Chromium
 
 ## 3. Browser
@@ -17,12 +19,12 @@
 - Browser Version: Latest stable via Playwright
 
 ## 4. Playwright Version
-- Version: 1.61.x
+- Version: 1.61.1
 
 ## 5. Test Metrics
 | Metric | Count |
 | --- | ---: |
-| Total Tests | 8 |
+| Total Tests in historical run | 8 |
 | Passed | 7 |
 | Failed | 0 |
 | Skipped | 1 |
@@ -36,5 +38,8 @@
 - Screenshots were captured for key validation points including login success, cart update, and checkout confirmation.
 - Report location: playwright-report/
 
-## 8. Overall Result
-The regression and functional validation cycle met the expected quality thresholds for the documented scope. The automation suite is considered stable for portfolio demonstration and further extension.
+## 8. Current Discovery Check
+The repository currently contains 41 tests in 34 spec files, as reported by `npx playwright test --list` on 2026-08-23. This is a discovery count, not an execution result. Run `npm test` to produce a current report.
+
+## 9. Overall Result
+The historical sample is retained for reference. No current pass/fail conclusion is recorded until the expanded suite is executed and its artifacts are reviewed.

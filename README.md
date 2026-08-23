@@ -1,19 +1,20 @@
 # SauceDemo Automation Practice
 
-## Project Overview
-This repository contains a Playwright-based automation framework for the SauceDemo application. It is designed to demonstrate professional QA automation practices, including end-to-end testing, maintainable test structure, and portfolio-ready documentation.
+Playwright and TypeScript tests for the [SauceDemo](https://www.saucedemo.com/) demo store. The project uses page objects, shared fixtures, environment variables, and Playwright reports to exercise functional and selected non-functional user journeys.
 
-## Features
-- Playwright with TypeScript
-- End-to-end test coverage for core SauceDemo user flows
-- Page Object Model (POM) structure
-- HTML reporting
-- Screenshot and trace capture support
-- QA documentation for test planning, execution, and defect management
+## Coverage
+- Login and negative login validation
+- Product inventory, product filtering, and cart operations
+- Checkout navigation, validation, and completion
+- Sidebar navigation, reset, and logout
+- Login-page responsive behavior
+- Login-page DOM-content-loaded performance budget
 
-## Folder Structure
+The current suite contains 41 discovered tests in 34 spec files. Confirm the inventory locally with `npx playwright test --list`; the count can change as tests are added.
+
+## Project Layout
 ```text
-tests/                # Test suite files organized by feature
+tests/                # Test specs organized by feature and test type
   Functional Testing/
     LoginPage/
     ProductPage/
@@ -29,52 +30,73 @@ utils/                # Shared helpers, constants, and test data
 locators/             # Centralized element locator definitions
 config/               # Environment-specific configuration
 test-data/            # External JSON/CSV test data
-reports/              # Generated HTML reports
-screenshots/          # Failure screenshots
+reports/              # Generated HTML and JSON reports
+test-results/         # Failure context and trace artifacts
 docs/                 # QA documentation set
 playwright.config.ts  # Playwright runner configuration
 ```
 
+## Prerequisites
+- Node.js 20 or newer recommended
+- npm
+- Access to the SauceDemo URL, or a compatible `BASE_URL`
+
 ## Installation
-Install dependencies with:
+Install dependencies and browser binaries:
 
 ```bash
 npm install
+npx playwright install chromium
 ```
 
+## Configuration
+The default base URL is `https://www.saucedemo.com/`. Override it with a `.env` file or an environment variable:
+
+```text
+BASE_URL=https://www.saucedemo.com/
+SAUCEDEMO_USERNAME=standard_user
+SAUCEDEMO_PASSWORD=secret_sauce
+```
+
+Credentials are read by `config/env.ts`; do not commit real credentials or secrets.
+
 ## Running Tests
-Run the test suite with:
+Run all tests:
 
 ```bash
 npx playwright test
 ```
 
-## Running Headed Mode
-Run tests in headed mode for visual validation:
+Run a feature or file:
+
+```bash
+npm test -- "tests/Functional Testing/Checkout"
+npx playwright test "tests/Functional Testing/LoginPage/login.spec.ts"
+```
+
+Run with the browser visible:
 
 ```bash
 npx playwright test --headed
 ```
 
-## Running Specific Tests
-Run a specific test file:
+List discovered tests without executing them:
 
 ```bash
-npx playwright test "tests/Functional Testing/LoginPage/login.spec.ts"
+npx playwright test --list
 ```
 
-## Generating HTML Reports
-HTML reports are configured by default. To generate them:
+## Reports and Artifacts
+The configured reporters write an HTML report to `reports/` and machine-readable results to `reports/test-results.json`. Screenshots are captured only on failure, and traces are captured on the first retry.
 
 ```bash
-npx playwright test --reporter=html
+npx playwright show-report reports
 ```
 
-## Viewing Reports
-Open the generated report locally:
+For a specific trace:
 
 ```bash
-npx playwright show-report
+npx playwright show-trace test-results/<test-directory>/trace.zip
 ```
 
 ## Run Intelligence Dashboard
@@ -111,8 +133,8 @@ Use Playwright Trace Viewer to inspect executions:
 npx playwright show-trace test-results/<trace-file>/trace.zip
 ```
 
-## CI/CD Integration
-This project is structured to support CI/CD workflows such as GitHub Actions. The test suite can be executed in a pipeline with report generation and artifact retention.
+## CI Readiness
+The suite can run in CI with `npx playwright test`. A pipeline should install dependencies and Chromium, provide `BASE_URL` when required, publish `reports/` and `test-results/` as artifacts, and retain the HTML report for failed runs.
 
 ## Documentation Links
 - [docs/Test Plan.md](docs/Test%20Plan.md)

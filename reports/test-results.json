@@ -4,9 +4,7 @@
       "C:\\Program Files\\nodejs\\node.exe",
       "C:\\Users\\razel\\Documents\\GitHub\\SauceDemo-Automation-Practice\\node_modules\\@playwright\\test\\cli.js",
       "test",
-      "tests/Functional",
-      "Testing/LoginPage/",
-      "--headed"
+      "--list"
     ],
     "configFile": "C:\\Users\\razel\\Documents\\GitHub\\SauceDemo-Automation-Practice\\playwright.config.ts",
     "rootDir": "C:/Users/razel/Documents/GitHub/SauceDemo-Automation-Practice/tests",
@@ -19,18 +17,14 @@
     "grep": {},
     "grepInvert": null,
     "maxFailures": 0,
-    "metadata": {
-      "actualWorkers": 4
-    },
+    "metadata": {},
     "preserveOutput": "always",
     "projects": [
       {
         "outputDir": "C:/Users/razel/Documents/GitHub/SauceDemo-Automation-Practice/test-results",
         "repeatEach": 1,
         "retries": 0,
-        "metadata": {
-          "actualWorkers": 4
-        },
+        "metadata": {},
         "id": "",
         "name": "",
         "testDir": "C:/Users/razel/Documents/GitHub/SauceDemo-Automation-Practice/tests",
@@ -71,6 +65,54 @@
   },
   "suites": [
     {
+      "title": "example.spec.ts",
+      "file": "example.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "has title",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "a30a6eba6312f6b87ea5-c9f3a09ffe0203704d7e",
+          "file": "example.spec.ts",
+          "line": 3,
+          "column": 5
+        },
+        {
+          "title": "get started link",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "a30a6eba6312f6b87ea5-3e4694c554a08f71545e",
+          "file": "example.spec.ts",
+          "line": 10,
+          "column": 5
+        }
+      ]
+    },
+    {
       "title": "Functional Testing\\Cart\\Add_to_Cart.spec.ts",
       "file": "Functional Testing/Cart/Add_to_Cart.spec.ts",
       "column": 0,
@@ -87,22 +129,8 @@
               "expectedStatus": "passed",
               "projectId": "",
               "projectName": "",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 3882,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-08-22T15:44:49.576Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
+              "results": [],
+              "status": "skipped"
             }
           ],
           "id": "241deb56097784a1f254-2f5a48a6274c1f6f0569",
@@ -129,22 +157,8 @@
               "expectedStatus": "passed",
               "projectId": "",
               "projectName": "",
-              "results": [
-                {
-                  "workerIndex": 1,
-                  "parallelIndex": 1,
-                  "status": "passed",
-                  "duration": 8586,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-08-22T15:44:49.613Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
+              "results": [],
+              "status": "skipped"
             }
           ],
           "id": "1539299cd6ab480a7671-674c0584fd76a358e4d0",
@@ -171,22 +185,8 @@
               "expectedStatus": "passed",
               "projectId": "",
               "projectName": "",
-              "results": [
-                {
-                  "workerIndex": 2,
-                  "parallelIndex": 2,
-                  "status": "passed",
-                  "duration": 19083,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-08-22T15:44:49.666Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
+              "results": [],
+              "status": "skipped"
             }
           ],
           "id": "c370b5c68f642c2df71a-a78e016ae8e743863473",
@@ -213,22 +213,8 @@
               "expectedStatus": "passed",
               "projectId": "",
               "projectName": "",
-              "results": [
-                {
-                  "workerIndex": 3,
-                  "parallelIndex": 3,
-                  "status": "passed",
-                  "duration": 8358,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-08-22T15:44:49.588Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
+              "results": [],
+              "status": "skipped"
             }
           ],
           "id": "3a8d5b01d95ef2439ddc-20ecd92f4caf7f64d506",
@@ -255,22 +241,8 @@
               "expectedStatus": "passed",
               "projectId": "",
               "projectName": "",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 16843,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-08-22T15:44:54.679Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
+              "results": [],
+              "status": "skipped"
             }
           ],
           "id": "79c673da9df157c60c0f-f062adf135299d3c4bd2",
@@ -297,22 +269,8 @@
               "expectedStatus": "passed",
               "projectId": "",
               "projectName": "",
-              "results": [
-                {
-                  "workerIndex": 3,
-                  "parallelIndex": 3,
-                  "status": "passed",
-                  "duration": 14478,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-08-22T15:44:58.972Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
+              "results": [],
+              "status": "skipped"
             }
           ],
           "id": "de2723989de9c3206972-0e00efa2646d3f09ac48",
@@ -339,22 +297,8 @@
               "expectedStatus": "passed",
               "projectId": "",
               "projectName": "",
-              "results": [
-                {
-                  "workerIndex": 1,
-                  "parallelIndex": 1,
-                  "status": "passed",
-                  "duration": 17905,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-08-22T15:44:59.115Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
+              "results": [],
+              "status": "skipped"
             }
           ],
           "id": "34a8fcf6ccde9708c0e9-1def1f23e03a8c052b24",
@@ -372,7 +316,7 @@
       "specs": [
         {
           "title": "Verify Checkout Failed - First Name Missing",
-          "ok": false,
+          "ok": true,
           "tags": [],
           "tests": [
             {
@@ -381,52 +325,8 @@
               "expectedStatus": "passed",
               "projectId": "",
               "projectName": "",
-              "results": [
-                {
-                  "workerIndex": 2,
-                  "parallelIndex": 2,
-                  "status": "failed",
-                  "duration": 9274,
-                  "error": {
-                    "message": "Error: page.waitForLoadState: Target page, context or browser has been closed",
-                    "stack": "Error: page.waitForLoadState: Target page, context or browser has been closed\n    at C:\\Users\\razel\\Documents\\GitHub\\SauceDemo-Automation-Practice\\tests\\Functional Testing\\Checkout\\Verify_Checkout_Failed_FirstName_Missing.spec.ts:7:14",
-                    "location": {
-                      "file": "C:\\Users\\razel\\Documents\\GitHub\\SauceDemo-Automation-Practice\\tests\\Functional Testing\\Checkout\\Verify_Checkout_Failed_FirstName_Missing.spec.ts",
-                      "column": 14,
-                      "line": 7
-                    },
-                    "snippet": "\u001b[0m \u001b[90m  5 |\u001b[39m test(\u001b[32m'Verify Checkout Failed - First Name Missing'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m  6 |\u001b[39m   \u001b[36mawait\u001b[39m login(page)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForLoadState(\u001b[32m'networkidle'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'[data-test=\"add-to-cart-sauce-labs-backpack\"]'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m  9 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'[data-test=\"shopping-cart-link\"]'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'[data-test=\"checkout\"]'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m"
-                  },
-                  "errors": [
-                    {
-                      "location": {
-                        "file": "C:\\Users\\razel\\Documents\\GitHub\\SauceDemo-Automation-Practice\\tests\\Functional Testing\\Checkout\\Verify_Checkout_Failed_FirstName_Missing.spec.ts",
-                        "column": 14,
-                        "line": 7
-                      },
-                      "message": "Error: page.waitForLoadState: Target page, context or browser has been closed\n\n\u001b[0m \u001b[90m  5 |\u001b[39m test(\u001b[32m'Verify Checkout Failed - First Name Missing'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m  6 |\u001b[39m   \u001b[36mawait\u001b[39m login(page)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForLoadState(\u001b[32m'networkidle'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'[data-test=\"add-to-cart-sauce-labs-backpack\"]'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m  9 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'[data-test=\"shopping-cart-link\"]'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'[data-test=\"checkout\"]'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\razel\\Documents\\GitHub\\SauceDemo-Automation-Practice\\tests\\Functional Testing\\Checkout\\Verify_Checkout_Failed_FirstName_Missing.spec.ts:7:14\u001b[22m"
-                    }
-                  ],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-08-22T15:45:09.614Z",
-                  "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "error-context",
-                      "contentType": "text/markdown",
-                      "path": "C:\\Users\\razel\\Documents\\GitHub\\SauceDemo-Automation-Practice\\test-results\\Functional Testing-Checkou-49a28-Failed---First-Name-Missing\\error-context.md"
-                    }
-                  ],
-                  "errorLocation": {
-                    "file": "C:\\Users\\razel\\Documents\\GitHub\\SauceDemo-Automation-Practice\\tests\\Functional Testing\\Checkout\\Verify_Checkout_Failed_FirstName_Missing.spec.ts",
-                    "column": 14,
-                    "line": 7
-                  }
-                }
-              ],
-              "status": "unexpected"
+              "results": [],
+              "status": "skipped"
             }
           ],
           "id": "de51174478a717cdb1ca-e6196f7b6b58532b7916",
@@ -444,7 +344,7 @@
       "specs": [
         {
           "title": "Verify Checkout Failed - Last Name Missing",
-          "ok": false,
+          "ok": true,
           "tags": [],
           "tests": [
             {
@@ -453,52 +353,8 @@
               "expectedStatus": "passed",
               "projectId": "",
               "projectName": "",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
-                  "status": "failed",
-                  "duration": 5727,
-                  "error": {
-                    "message": "Error: page.waitForLoadState: Target page, context or browser has been closed",
-                    "stack": "Error: page.waitForLoadState: Target page, context or browser has been closed\n    at C:\\Users\\razel\\Documents\\GitHub\\SauceDemo-Automation-Practice\\tests\\Functional Testing\\Checkout\\Verify_Checkout_Failed_LastName_Missing.spec.ts:7:14",
-                    "location": {
-                      "file": "C:\\Users\\razel\\Documents\\GitHub\\SauceDemo-Automation-Practice\\tests\\Functional Testing\\Checkout\\Verify_Checkout_Failed_LastName_Missing.spec.ts",
-                      "column": 14,
-                      "line": 7
-                    },
-                    "snippet": "\u001b[0m \u001b[90m  5 |\u001b[39m test(\u001b[32m'Verify Checkout Failed - Last Name Missing'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m  6 |\u001b[39m   \u001b[36mawait\u001b[39m login(page)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForLoadState(\u001b[32m'networkidle'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'[data-test=\"add-to-cart-sauce-labs-backpack\"]'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m  9 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'[data-test=\"shopping-cart-link\"]'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'[data-test=\"checkout\"]'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m"
-                  },
-                  "errors": [
-                    {
-                      "location": {
-                        "file": "C:\\Users\\razel\\Documents\\GitHub\\SauceDemo-Automation-Practice\\tests\\Functional Testing\\Checkout\\Verify_Checkout_Failed_LastName_Missing.spec.ts",
-                        "column": 14,
-                        "line": 7
-                      },
-                      "message": "Error: page.waitForLoadState: Target page, context or browser has been closed\n\n\u001b[0m \u001b[90m  5 |\u001b[39m test(\u001b[32m'Verify Checkout Failed - Last Name Missing'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m  6 |\u001b[39m   \u001b[36mawait\u001b[39m login(page)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForLoadState(\u001b[32m'networkidle'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'[data-test=\"add-to-cart-sauce-labs-backpack\"]'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m  9 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'[data-test=\"shopping-cart-link\"]'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'[data-test=\"checkout\"]'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\razel\\Documents\\GitHub\\SauceDemo-Automation-Practice\\tests\\Functional Testing\\Checkout\\Verify_Checkout_Failed_LastName_Missing.spec.ts:7:14\u001b[22m"
-                    }
-                  ],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-08-22T15:45:11.661Z",
-                  "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "error-context",
-                      "contentType": "text/markdown",
-                      "path": "C:\\Users\\razel\\Documents\\GitHub\\SauceDemo-Automation-Practice\\test-results\\Functional Testing-Checkou-a5abb--Failed---Last-Name-Missing\\error-context.md"
-                    }
-                  ],
-                  "errorLocation": {
-                    "file": "C:\\Users\\razel\\Documents\\GitHub\\SauceDemo-Automation-Practice\\tests\\Functional Testing\\Checkout\\Verify_Checkout_Failed_LastName_Missing.spec.ts",
-                    "column": 14,
-                    "line": 7
-                  }
-                }
-              ],
-              "status": "unexpected"
+              "results": [],
+              "status": "skipped"
             }
           ],
           "id": "4d17969b12dfc22bd5b3-292638dd59bbc0aa026b",
@@ -525,22 +381,8 @@
               "expectedStatus": "passed",
               "projectId": "",
               "projectName": "",
-              "results": [
-                {
-                  "workerIndex": 3,
-                  "parallelIndex": 3,
-                  "status": "passed",
-                  "duration": 13366,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-08-22T15:45:13.499Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
+              "results": [],
+              "status": "skipped"
             }
           ],
           "id": "411890e27748fb19e742-37cce8b78339afcf52aa",
@@ -558,7 +400,7 @@
       "specs": [
         {
           "title": "Verify Checkout Invalid Postal Code",
-          "ok": false,
+          "ok": true,
           "tags": [],
           "tests": [
             {
@@ -567,52 +409,8 @@
               "expectedStatus": "passed",
               "projectId": "",
               "projectName": "",
-              "results": [
-                {
-                  "workerIndex": 1,
-                  "parallelIndex": 1,
-                  "status": "failed",
-                  "duration": 1224,
-                  "error": {
-                    "message": "Error: locator.fill: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for getByPlaceholder('Username')\u001b[22m\n",
-                    "stack": "Error: locator.fill: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for getByPlaceholder('Username')\u001b[22m\n\n    at LoginPage.login (C:\\Users\\razel\\Documents\\GitHub\\SauceDemo-Automation-Practice\\pages\\LoginPage.ts:20:25)\n    at login (C:\\Users\\razel\\Documents\\GitHub\\SauceDemo-Automation-Practice\\utils\\helpers.ts:8:19)\n    at C:\\Users\\razel\\Documents\\GitHub\\SauceDemo-Automation-Practice\\tests\\Functional Testing\\Checkout\\Verify_Checkout_Invalid_PostalCode.spec.ts:6:3",
-                    "location": {
-                      "file": "C:\\Users\\razel\\Documents\\GitHub\\SauceDemo-Automation-Practice\\pages\\LoginPage.ts",
-                      "column": 25,
-                      "line": 20
-                    },
-                    "snippet": "\u001b[90m   at \u001b[39m..\\pages\\LoginPage.ts:20\n\n\u001b[0m \u001b[90m 18 |\u001b[39m\n \u001b[90m 19 |\u001b[39m   \u001b[36masync\u001b[39m login(username\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m password\u001b[33m:\u001b[39m string)\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 20 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39musername\u001b[33m.\u001b[39mfill(username)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 21 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpassword\u001b[33m.\u001b[39mfill(password)\u001b[33m;\u001b[39m\n \u001b[90m 22 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mloginButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 23 |\u001b[39m   }\u001b[0m"
-                  },
-                  "errors": [
-                    {
-                      "location": {
-                        "file": "C:\\Users\\razel\\Documents\\GitHub\\SauceDemo-Automation-Practice\\pages\\LoginPage.ts",
-                        "column": 25,
-                        "line": 20
-                      },
-                      "message": "Error: locator.fill: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for getByPlaceholder('Username')\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\pages\\LoginPage.ts:20\n\n\u001b[0m \u001b[90m 18 |\u001b[39m\n \u001b[90m 19 |\u001b[39m   \u001b[36masync\u001b[39m login(username\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m password\u001b[33m:\u001b[39m string)\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 20 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39musername\u001b[33m.\u001b[39mfill(username)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 21 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpassword\u001b[33m.\u001b[39mfill(password)\u001b[33m;\u001b[39m\n \u001b[90m 22 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mloginButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 23 |\u001b[39m   }\u001b[0m\n\u001b[2m    at LoginPage.login (C:\\Users\\razel\\Documents\\GitHub\\SauceDemo-Automation-Practice\\pages\\LoginPage.ts:20:25)\u001b[22m\n\u001b[2m    at login (C:\\Users\\razel\\Documents\\GitHub\\SauceDemo-Automation-Practice\\utils\\helpers.ts:8:19)\u001b[22m\n\u001b[2m    at C:\\Users\\razel\\Documents\\GitHub\\SauceDemo-Automation-Practice\\tests\\Functional Testing\\Checkout\\Verify_Checkout_Invalid_PostalCode.spec.ts:6:3\u001b[22m"
-                    }
-                  ],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-08-22T15:45:17.137Z",
-                  "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "error-context",
-                      "contentType": "text/markdown",
-                      "path": "C:\\Users\\razel\\Documents\\GitHub\\SauceDemo-Automation-Practice\\test-results\\Functional Testing-Checkou-548eb-heckout-Invalid-Postal-Code\\error-context.md"
-                    }
-                  ],
-                  "errorLocation": {
-                    "file": "C:\\Users\\razel\\Documents\\GitHub\\SauceDemo-Automation-Practice\\pages\\LoginPage.ts",
-                    "column": 25,
-                    "line": 20
-                  }
-                }
-              ],
-              "status": "unexpected"
+              "results": [],
+              "status": "skipped"
             }
           ],
           "id": "7e7bb91733b47ddaf65e-8a3820cd6a0c16c8d205",
@@ -639,56 +437,7 @@
               "expectedStatus": "passed",
               "projectId": "",
               "projectName": "",
-              "results": [
-                {
-                  "workerIndex": 4,
-                  "parallelIndex": 0,
-                  "status": "interrupted",
-                  "duration": 6136,
-                  "error": {
-                    "message": "Error: page.waitForLoadState: Test ended.",
-                    "stack": "Error: page.waitForLoadState: Test ended.\n    at C:\\Users\\razel\\Documents\\GitHub\\SauceDemo-Automation-Practice\\tests\\Functional Testing\\Checkout\\Verify_Checkout_LongInput_RequiredField.spec.ts:7:14",
-                    "location": {
-                      "file": "C:\\Users\\razel\\Documents\\GitHub\\SauceDemo-Automation-Practice\\tests\\Functional Testing\\Checkout\\Verify_Checkout_LongInput_RequiredField.spec.ts",
-                      "column": 14,
-                      "line": 7
-                    },
-                    "snippet": "\u001b[0m \u001b[90m  5 |\u001b[39m test(\u001b[32m'Verify Checkout Excessive Input in Required Fields'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m  6 |\u001b[39m   \u001b[36mawait\u001b[39m login(page)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForLoadState(\u001b[32m'networkidle'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'[data-test=\"add-to-cart-sauce-labs-backpack\"]'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m  9 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'[data-test=\"shopping-cart-link\"]'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'[data-test=\"checkout\"]'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m"
-                  },
-                  "errors": [
-                    {
-                      "location": {
-                        "file": "C:\\Users\\razel\\Documents\\GitHub\\SauceDemo-Automation-Practice\\tests\\Functional Testing\\Checkout\\Verify_Checkout_LongInput_RequiredField.spec.ts",
-                        "column": 14,
-                        "line": 7
-                      },
-                      "message": "Error: page.waitForLoadState: Test ended.\n\n\u001b[0m \u001b[90m  5 |\u001b[39m test(\u001b[32m'Verify Checkout Excessive Input in Required Fields'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m  6 |\u001b[39m   \u001b[36mawait\u001b[39m login(page)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForLoadState(\u001b[32m'networkidle'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'[data-test=\"add-to-cart-sauce-labs-backpack\"]'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m  9 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'[data-test=\"shopping-cart-link\"]'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'[data-test=\"checkout\"]'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\razel\\Documents\\GitHub\\SauceDemo-Automation-Practice\\tests\\Functional Testing\\Checkout\\Verify_Checkout_LongInput_RequiredField.spec.ts:7:14\u001b[22m"
-                    }
-                  ],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-08-22T15:45:20.423Z",
-                  "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "C:\\Users\\razel\\Documents\\GitHub\\SauceDemo-Automation-Practice\\test-results\\Functional Testing-Checkou-24dc5-ve-Input-in-Required-Fields\\test-failed-1.png"
-                    },
-                    {
-                      "name": "error-context",
-                      "contentType": "text/markdown",
-                      "path": "C:\\Users\\razel\\Documents\\GitHub\\SauceDemo-Automation-Practice\\test-results\\Functional Testing-Checkou-24dc5-ve-Input-in-Required-Fields\\error-context.md"
-                    }
-                  ],
-                  "errorLocation": {
-                    "file": "C:\\Users\\razel\\Documents\\GitHub\\SauceDemo-Automation-Practice\\tests\\Functional Testing\\Checkout\\Verify_Checkout_LongInput_RequiredField.spec.ts",
-                    "column": 14,
-                    "line": 7
-                  }
-                }
-              ],
+              "results": [],
               "status": "skipped"
             }
           ],
@@ -707,7 +456,7 @@
       "specs": [
         {
           "title": "Verify Checkout Page Requirements",
-          "ok": false,
+          "ok": true,
           "tags": [],
           "tests": [
             {
@@ -716,52 +465,8 @@
               "expectedStatus": "passed",
               "projectId": "",
               "projectName": "",
-              "results": [
-                {
-                  "workerIndex": 5,
-                  "parallelIndex": 1,
-                  "status": "failed",
-                  "duration": 3649,
-                  "error": {
-                    "message": "Error: page.waitForLoadState: Target page, context or browser has been closed",
-                    "stack": "Error: page.waitForLoadState: Target page, context or browser has been closed\n    at C:\\Users\\razel\\Documents\\GitHub\\SauceDemo-Automation-Practice\\tests\\Functional Testing\\Checkout\\Verify_Checkout_Page_Requirement.spec.ts:7:14",
-                    "location": {
-                      "file": "C:\\Users\\razel\\Documents\\GitHub\\SauceDemo-Automation-Practice\\tests\\Functional Testing\\Checkout\\Verify_Checkout_Page_Requirement.spec.ts",
-                      "column": 14,
-                      "line": 7
-                    },
-                    "snippet": "\u001b[0m \u001b[90m  5 |\u001b[39m test(\u001b[32m'Verify Checkout Page Requirements'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m  6 |\u001b[39m   \u001b[36mawait\u001b[39m login(page)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForLoadState(\u001b[32m'networkidle'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'[data-test=\"add-to-cart-sauce-labs-backpack\"]'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m  9 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'[data-test=\"shopping-cart-link\"]'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'[data-test=\"checkout\"]'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m"
-                  },
-                  "errors": [
-                    {
-                      "location": {
-                        "file": "C:\\Users\\razel\\Documents\\GitHub\\SauceDemo-Automation-Practice\\tests\\Functional Testing\\Checkout\\Verify_Checkout_Page_Requirement.spec.ts",
-                        "column": 14,
-                        "line": 7
-                      },
-                      "message": "Error: page.waitForLoadState: Target page, context or browser has been closed\n\n\u001b[0m \u001b[90m  5 |\u001b[39m test(\u001b[32m'Verify Checkout Page Requirements'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m  6 |\u001b[39m   \u001b[36mawait\u001b[39m login(page)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForLoadState(\u001b[32m'networkidle'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'[data-test=\"add-to-cart-sauce-labs-backpack\"]'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m  9 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'[data-test=\"shopping-cart-link\"]'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'[data-test=\"checkout\"]'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\razel\\Documents\\GitHub\\SauceDemo-Automation-Practice\\tests\\Functional Testing\\Checkout\\Verify_Checkout_Page_Requirement.spec.ts:7:14\u001b[22m"
-                    }
-                  ],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-08-22T15:45:21.461Z",
-                  "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "error-context",
-                      "contentType": "text/markdown",
-                      "path": "C:\\Users\\razel\\Documents\\GitHub\\SauceDemo-Automation-Practice\\test-results\\Functional Testing-Checkou-a433d--Checkout-Page-Requirements\\error-context.md"
-                    }
-                  ],
-                  "errorLocation": {
-                    "file": "C:\\Users\\razel\\Documents\\GitHub\\SauceDemo-Automation-Practice\\tests\\Functional Testing\\Checkout\\Verify_Checkout_Page_Requirement.spec.ts",
-                    "column": 14,
-                    "line": 7
-                  }
-                }
-              ],
-              "status": "unexpected"
+              "results": [],
+              "status": "skipped"
             }
           ],
           "id": "1a5a727a6f3e1f8e23c1-999b2534931878f858c3",
@@ -779,7 +484,7 @@
       "specs": [
         {
           "title": "Verify Checkout First Name Field Special Characters",
-          "ok": false,
+          "ok": true,
           "tags": [],
           "tests": [
             {
@@ -788,52 +493,8 @@
               "expectedStatus": "passed",
               "projectId": "",
               "projectName": "",
-              "results": [
-                {
-                  "workerIndex": 6,
-                  "parallelIndex": 2,
-                  "status": "failed",
-                  "duration": 1426,
-                  "error": {
-                    "message": "Error: locator.fill: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for getByPlaceholder('Password')\u001b[22m\n\u001b[2m    - locator resolved to <input value=\"\" id=\"password\" type=\"password\" name=\"password\" autocorrect=\"off\" data-test=\"password\" autocapitalize=\"none\" placeholder=\"Password\" class=\"input_error form_input\"/>\u001b[22m\n\u001b[2m    - fill(\"secret_sauce\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and editable\u001b[22m\n",
-                    "stack": "Error: locator.fill: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for getByPlaceholder('Password')\u001b[22m\n\u001b[2m    - locator resolved to <input value=\"\" id=\"password\" type=\"password\" name=\"password\" autocorrect=\"off\" data-test=\"password\" autocapitalize=\"none\" placeholder=\"Password\" class=\"input_error form_input\"/>\u001b[22m\n\u001b[2m    - fill(\"secret_sauce\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and editable\u001b[22m\n\n    at LoginPage.login (C:\\Users\\razel\\Documents\\GitHub\\SauceDemo-Automation-Practice\\pages\\LoginPage.ts:21:25)\n    at login (C:\\Users\\razel\\Documents\\GitHub\\SauceDemo-Automation-Practice\\utils\\helpers.ts:8:3)\n    at C:\\Users\\razel\\Documents\\GitHub\\SauceDemo-Automation-Practice\\tests\\Functional Testing\\Checkout\\Verify_Checkout_SpecialCharacter_FirstName.spec.ts:6:3",
-                    "location": {
-                      "file": "C:\\Users\\razel\\Documents\\GitHub\\SauceDemo-Automation-Practice\\pages\\LoginPage.ts",
-                      "column": 25,
-                      "line": 21
-                    },
-                    "snippet": "\u001b[90m   at \u001b[39m..\\pages\\LoginPage.ts:21\n\n\u001b[0m \u001b[90m 19 |\u001b[39m   \u001b[36masync\u001b[39m login(username\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m password\u001b[33m:\u001b[39m string)\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\n \u001b[90m 20 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39musername\u001b[33m.\u001b[39mfill(username)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 21 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpassword\u001b[33m.\u001b[39mfill(password)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 22 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mloginButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 23 |\u001b[39m   }\n \u001b[90m 24 |\u001b[39m }\u001b[0m"
-                  },
-                  "errors": [
-                    {
-                      "location": {
-                        "file": "C:\\Users\\razel\\Documents\\GitHub\\SauceDemo-Automation-Practice\\pages\\LoginPage.ts",
-                        "column": 25,
-                        "line": 21
-                      },
-                      "message": "Error: locator.fill: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for getByPlaceholder('Password')\u001b[22m\n\u001b[2m    - locator resolved to <input value=\"\" id=\"password\" type=\"password\" name=\"password\" autocorrect=\"off\" data-test=\"password\" autocapitalize=\"none\" placeholder=\"Password\" class=\"input_error form_input\"/>\u001b[22m\n\u001b[2m    - fill(\"secret_sauce\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and editable\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\pages\\LoginPage.ts:21\n\n\u001b[0m \u001b[90m 19 |\u001b[39m   \u001b[36masync\u001b[39m login(username\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m password\u001b[33m:\u001b[39m string)\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\n \u001b[90m 20 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39musername\u001b[33m.\u001b[39mfill(username)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 21 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpassword\u001b[33m.\u001b[39mfill(password)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 22 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mloginButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 23 |\u001b[39m   }\n \u001b[90m 24 |\u001b[39m }\u001b[0m\n\u001b[2m    at LoginPage.login (C:\\Users\\razel\\Documents\\GitHub\\SauceDemo-Automation-Practice\\pages\\LoginPage.ts:21:25)\u001b[22m\n\u001b[2m    at login (C:\\Users\\razel\\Documents\\GitHub\\SauceDemo-Automation-Practice\\utils\\helpers.ts:8:3)\u001b[22m\n\u001b[2m    at C:\\Users\\razel\\Documents\\GitHub\\SauceDemo-Automation-Practice\\tests\\Functional Testing\\Checkout\\Verify_Checkout_SpecialCharacter_FirstName.spec.ts:6:3\u001b[22m"
-                    }
-                  ],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-08-22T15:45:22.575Z",
-                  "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "error-context",
-                      "contentType": "text/markdown",
-                      "path": "C:\\Users\\razel\\Documents\\GitHub\\SauceDemo-Automation-Practice\\test-results\\Functional Testing-Checkou-c5c31-me-Field-Special-Characters\\error-context.md"
-                    }
-                  ],
-                  "errorLocation": {
-                    "file": "C:\\Users\\razel\\Documents\\GitHub\\SauceDemo-Automation-Practice\\pages\\LoginPage.ts",
-                    "column": 25,
-                    "line": 21
-                  }
-                }
-              ],
-              "status": "unexpected"
+              "results": [],
+              "status": "skipped"
             }
           ],
           "id": "d18148538a5c1aca1309-9e1b5abda3985f3ae2ed",
@@ -888,21 +549,7 @@
               "expectedStatus": "passed",
               "projectId": "",
               "projectName": "",
-              "results": [
-                {
-                  "workerIndex": 3,
-                  "parallelIndex": 3,
-                  "status": "interrupted",
-                  "duration": 214,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-08-22T15:45:26.959Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
+              "results": [],
               "status": "skipped"
             }
           ],
@@ -1452,15 +1099,80 @@
           "column": 5
         }
       ]
+    },
+    {
+      "title": "Non-Functional Test\\Performance\\Page_Load_Performance.spec.ts",
+      "file": "Non-Functional Test/Performance/Page_Load_Performance.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "login page reaches DOM content loaded within the performance budget",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "a0b086e22adad5f8fa2d-2757b756f4108750395a",
+          "file": "Non-Functional Test/Performance/Page_Load_Performance.spec.ts",
+          "line": 4,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "Non-Functional Test\\Responsive\\Responsive_LoginPage.spec.ts",
+      "file": "Non-Functional Test/Responsive/Responsive_LoginPage.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "SauceDemo responsive behavior",
+          "file": "Non-Functional Test/Responsive/Responsive_LoginPage.spec.ts",
+          "line": 4,
+          "column": 6,
+          "specs": [
+            {
+              "title": "login page remains usable at mobile and desktop widths",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "e7e69453bcacb76f1a86-aa544566e8bcfbfa92b3",
+              "file": "Non-Functional Test/Responsive/Responsive_LoginPage.spec.ts",
+              "line": 5,
+              "column": 7
+            }
+          ]
+        }
+      ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-08-22T15:44:48.294Z",
-    "duration": 39656.593,
-    "expected": 8,
-    "skipped": 24,
-    "unexpected": 5,
+    "startTime": "2026-08-23T15:21:29.014Z",
+    "duration": 1680.7740000000001,
+    "expected": 0,
+    "skipped": 41,
+    "unexpected": 0,
     "flaky": 0
   }
 }
