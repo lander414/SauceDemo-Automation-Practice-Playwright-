@@ -1,7 +1,8 @@
 const state = { tests: [], artifacts: [] };
 const $ = (selector) => document.querySelector(selector);
 const clean = (text) => String(text || '').replace(/\u001b\[[0-9;]*m/g, '').trim();
-const formatMs = (value) => `${Math.round(value).toLocaleString()} ms`;
+const toMs = (value) => Number.isFinite(Number(value)) ? Number(value) : 0;
+const formatMs = (value) => `${Math.round(toMs(value)).toLocaleString()} ms`;
 
 async function loadData() {
   const response = await fetch(`/api/data?time=${Date.now()}`);
@@ -16,7 +17,7 @@ function render() {
   const passed = state.tests.filter((test) => test.status === 'passed').length;
   const failed = state.tests.filter((test) => test.status === 'failed').length;
   const skipped = state.tests.filter((test) => test.status === 'skipped').length;
-  const totalDuration = state.tests.reduce((sum, test) => sum + test.duration, 0);
+  const totalDuration = state.tests.reduce((sum, test) => sum + toMs(test.duration), 0);
   $('#run-state').textContent = state.tests.length ? (failed ? `${failed} FAILURE${failed > 1 ? 'S' : ''} NEED ATTENTION` : 'RUN HEALTHY') : 'WAITING FOR RUN DATA';
   $('#metrics').innerHTML = [['Total tests', state.tests.length, ''], ['Passed', passed, 'pass'], ['Failed', failed, 'failed'], ['Run time', formatMs(totalDuration), '']].map(([label, value, className]) => `<div class="metric ${className}"><div class="metric-label">${label}</div><div class="metric-value">${value}</div></div>`).join('');
   renderDurationChart();
@@ -27,20 +28,32 @@ function render() {
 function renderDurationChart() {
   const chart = $('#duration-chart');
   if (!state.tests.length) { chart.innerHTML = '<div class="empty">Run Playwright to see runtime data.</div>'; return; }
-  const max = Math.max(...state.tests.map((test) => test.duration), 1);
-  chart.innerHTML = state.tests.slice(0, 12).map((test) => `<div class="bar-item" title="${escapeHtml(test.title)}"><span class="bar-ms">${Math.round(test.duration)}ms</span><div class="bar" style="height:${Math.max(4, test.duration / max * 100)}%;background:${test.status === 'failed' ? 'var(--coral)' : 'var(--blue)'}"></div><span class="bar-label">${escapeHtml(shortName(test.title))}</span></div>`).join('');
+  const max = Math.max(...state.tests.map((test) => toMs(test.duration)), 1);
+  chart.innerHTML = state.tests.slice(0, 12).map((test) => { const duration = toMs(test.duration); const tooltip = `${test.title} - ${formatMs(duration)}`; return `<div class="bar-item" title="${escapeHtml(tooltip)}" aria-label="${escapeHtml(tooltip)}"><span class="bar-ms">${formatChartMs(duration)}</span><div class="bar" style="height:${Math.max(4, duration / max * 100)}%;background:${test.status === 'failed' ? 'var(--coral)' : 'var(--blue)'}"></div><span class="bar-label">${escapeHtml(shortName(test.title))}</span></div>`; }).join('');
 }
 
 function renderPerformance() {
-  const metric = state.tests.flatMap((test) => test.attachments || []).find((attachment) => attachment.name === 'performance-metrics' && attachment.value?.value !== undefined);
-  if (!metric) return;
-  const { value, budget } = metric.value;
+  const metrics = state.tests.flatMap((test) => test.attachments || [])
+    .filter((attachment) => attachment.name === 'performance-metrics')
+    .map((attachment) => attachment.value)
+    .filter((metric) => Number.isFinite(Number(metric?.value)) && Number.isFinite(Number(metric?.budget)) && Number(metric.budget) > 0);
+  const metric = metrics.at(-1);
+  if (!metric) {
+    $('#gauge-value').textContent = '--';
+    $('.gauge').style.setProperty('--gauge', '0%');
+    $('#budget-label').textContent = 'No metric';
+    $('#gauge-status').textContent = 'Awaiting performance test';
+    $('#gauge-detail').textContent = 'Run the performance suite to populate this signal.';
+    return;
+  }
+  const value = toMs(metric.value);
+  const budget = toMs(metric.budget);
   const percent = Math.min(100, value / budget * 100);
   $('#gauge-value').textContent = Math.round(value);
   $('.gauge').style.setProperty('--gauge', `${percent}%`);
   $('#budget-label').textContent = `Budget ${formatMs(budget)}`;
-  $('#gauge-status').textContent = value < budget ? 'Within performance budget' : 'Over performance budget';
-  $('#gauge-detail').textContent = `${formatMs(value)} measured for DOM content loaded. ${value < budget ? `${Math.round(budget - value)} ms headroom remains.` : `${Math.round(value - budget)} ms over the limit.`}`;
+  $('#gauge-status').textContent = value <= budget ? 'Within performance budget' : 'Over performance budget';
+  $('#gauge-detail').textContent = `${formatMs(value)} measured for DOM content loaded. ${value <= budget ? `${Math.round(budget - value)} ms headroom remains.` : `${Math.round(value - budget)} ms over the limit.`}`;
 }
 
 function renderResults() {
@@ -65,7 +78,8 @@ function renderResults() {
   });
 }
 
-function shortName(title) { return title.length > 18 ? `${title.slice(0, 16)}...` : title; }
+function formatChartMs(value) { return toMs(value) >= 1000 ? `${(toMs(value) / 1000).toFixed(1)}k` : `${Math.round(toMs(value))}`; }
+function shortName(title) { return title.length > 12 ? `${title.slice(0, 10)}...` : title; }
 function escapeHtml(value) { return String(value).replace(/[&<>"']/g, (character) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[character]); }
 $('#refresh').addEventListener('click', loadData);
 $('#status-filter').addEventListener('change', renderResults);
