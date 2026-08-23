@@ -5,48 +5,48 @@
 - Application Under Test: SauceDemo
 - URL: https://www.saucedemo.com/
 - Document Owner: QA Automation Team
-- Version: 1.0
-- Date: 2026-08-06
-- Review Status: Draft for Portfolio/Team Review
+- Version: 1.1
+- Date: 2026-08-23
+- Review Status: Active working document
 
 ## 2. Objective
-The purpose of this test plan is to define the scope, approach, environment, and deliverables for validating the key business flows of the SauceDemo application using Playwright and TypeScript. The plan supports both manual validation and automated regression coverage.
+This plan defines the scope, approach, environment, and deliverables for validating SauceDemo with Playwright and TypeScript. It describes the repository's automated coverage and identifies manual or future checks separately.
 
 ## 3. Scope
 ### In Scope
 - User login with valid and invalid credentials
-- Product listing and filtering
+- Product listing, product details, and filtering
 - Add to cart and remove from cart
 - Shopping cart validation
 - Checkout flow
 - Logout functionality
-- Basic UI and navigation checks
+- Sidebar navigation, reset, and logout
 - Responsive layout and page-load performance checks
 
 ### Out of Scope
 - Security penetration testing
 - Cross-browser compatibility beyond the targeted browser strategy
-- Payment gateway integration testing
-- Database-level validation
+- Payment processing and external integrations
+- Source-code unit testing and database-level validation
 
 ## 4. Test Environment
 - Application URL: https://www.saucedemo.com/
-- OS: Windows 11
+- OS: Windows (local development baseline)
 - Browser: Chromium (Playwright)
-- Automation Tool: Playwright 1.61.x
+- Automation Tool: Playwright 1.61.1
 - Language: TypeScript
 - Test Runner: Playwright Test
-- Test Data: Standard SauceDemo demo users
+- Test Data: SauceDemo demo users and deterministic checkout data
 
 ## 5. Test Strategy
-The test strategy focuses on functional correctness, regression prevention, and maintainability. Core scenarios will be automated using Playwright with a Page Object Model (POM) structure to improve scalability and readability. Manual test cases will be used to complement automation where exploratory or usability validation is beneficial.
+The strategy focuses on functional correctness, regression prevention, and maintainability. Tests use Playwright with Page Object Model classes, shared fixtures, and centralized helpers. Manual exploratory checks remain complementary and are not counted as automated coverage.
 
 ## 6. Test Approach
 - Requirements-based testing for critical user journeys
 - Positive and negative testing for login and checkout flows
 - Regression testing for core workflows after changes
 - Automation-first approach for repetitive and high-value scenarios
-- Exploratory testing for edge cases and UI behavior
+- Exploratory testing for edge cases and UI behavior when time and environment permit
 
 ## 7. Test Deliverables
 - Test Plan
@@ -54,28 +54,28 @@ The test strategy focuses on functional correctness, regression prevention, and 
 - Traceability Matrix
 - Test Execution Report
 - Bug Report Template
-- Automation Test Suite Documentation
+- Automation repository and generated test artifacts
 
 ## 8. Entry Criteria
 - Application under test is accessible
 - Test environment is configured
 - Required test data is available
 - Automation framework dependencies are installed
-- Test cases and scenarios are reviewed
+- Scope and test data are reviewed
 
 ## 9. Exit Criteria
 - All planned high-priority test cases are executed
 - Critical defects are either fixed or accepted with documented risk
 - Test execution report is completed
-- Regression suite is executed successfully or with known issues documented
+- Results, defects, skips, and environment limitations are documented
 
 ## 10. Risks and Mitigation
 | Risk | Impact | Mitigation |
 | --- | --- | --- |
 | Application UI changes may break selectors | High | Use stable locators and maintain POM classes |
-| Test data inconsistency | Medium | Use standard test users and validate data before execution |
-| Environment instability | Medium | Run tests against a known stable environment and capture screenshots |
-| Limited browser coverage | Medium | Prioritize Chromium for initial automation and expand later |
+| Demo-site availability or behavior changes | High | Record the base URL and rerun the smoke subset before regression |
+| Test data inconsistency | Medium | Use standard users and deterministic checkout data |
+| Limited browser coverage | Medium | Treat Chromium as the baseline and track Firefox/WebKit as future coverage |
 
 ## 11. Test Schedule
 - Planning and documentation: Week 1
@@ -86,4 +86,4 @@ The test strategy focuses on functional correctness, regression prevention, and 
 
 ## 12. Approval
 - Prepared By: Lander Patrick Nathan S. Agustin
-- Status: Approved for Documentation and Portfolio Use
+- Status: Maintained for documentation and portfolio use
