@@ -29,18 +29,18 @@ function startDashboard() {
 }
 
 function openDashboard() {
-  const command = isWindows ? 'cmd' : process.platform === 'darwin' ? 'open' : 'xdg-open';
-  const args = isWindows ? ['/c', 'start', '', dashboardUrl] : [dashboardUrl];
-  spawn(command, args, { detached: true, stdio: 'ignore', windowsHide: true }).unref();
+  const command = isWindows ? 'explorer.exe' : process.platform === 'darwin' ? 'open' : 'xdg-open';
+  const launcher = spawn(command, [dashboardUrl], { detached: true, stdio: 'ignore', windowsHide: true });
+  launcher.on('error', (error) => console.error(`Could not open dashboard at ${dashboardUrl}: ${error.message}`));
+  launcher.unref();
 }
 
 async function main() {
   if (!(await dashboardIsRunning())) startDashboard();
-  const playwright = isWindows ? 'npx.cmd' : 'npx';
-  const test = spawn(playwright, ['playwright', 'test', ...process.argv.slice(2)], {
+  const playwrightCli = require.resolve('@playwright/test/cli');
+  const test = spawn(process.execPath, [playwrightCli, 'test', ...process.argv.slice(2)], {
     cwd: projectRoot,
     stdio: 'inherit',
-    shell: isWindows,
   });
   test.on('close', (code, signal) => {
     openDashboard();

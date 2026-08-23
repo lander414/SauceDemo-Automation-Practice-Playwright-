@@ -4,7 +4,10 @@
       "C:\\Program Files\\nodejs\\node.exe",
       "C:\\Users\\razel\\Documents\\GitHub\\SauceDemo-Automation-Practice\\node_modules\\@playwright\\test\\cli.js",
       "test",
-      "--list"
+      "tests/Functional Testing/LoginPage/login.spec.ts",
+      "tests/Non-Functional Test/Performance",
+      "--headed",
+      "--workers=2"
     ],
     "configFile": "C:\\Users\\razel\\Documents\\GitHub\\SauceDemo-Automation-Practice\\playwright.config.ts",
     "rootDir": "C:/Users/razel/Documents/GitHub/SauceDemo-Automation-Practice/tests",
@@ -17,14 +20,18 @@
     "grep": {},
     "grepInvert": null,
     "maxFailures": 0,
-    "metadata": {},
+    "metadata": {
+      "actualWorkers": 2
+    },
     "preserveOutput": "always",
     "projects": [
       {
         "outputDir": "C:/Users/razel/Documents/GitHub/SauceDemo-Automation-Practice/test-results",
         "repeatEach": 1,
         "retries": 0,
-        "metadata": {},
+        "metadata": {
+          "actualWorkers": 2
+        },
         "id": "",
         "name": "",
         "testDir": "C:/Users/razel/Documents/GitHub/SauceDemo-Automation-Practice/tests",
@@ -60,546 +67,10 @@
     "updateSnapshots": "missing",
     "updateSourceMethod": "patch",
     "version": "1.61.1",
-    "workers": 4,
+    "workers": 2,
     "webServer": null
   },
   "suites": [
-    {
-      "title": "example.spec.ts",
-      "file": "example.spec.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [
-        {
-          "title": "has title",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "",
-              "projectName": "",
-              "results": [],
-              "status": "skipped"
-            }
-          ],
-          "id": "a30a6eba6312f6b87ea5-c9f3a09ffe0203704d7e",
-          "file": "example.spec.ts",
-          "line": 3,
-          "column": 5
-        },
-        {
-          "title": "get started link",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "",
-              "projectName": "",
-              "results": [],
-              "status": "skipped"
-            }
-          ],
-          "id": "a30a6eba6312f6b87ea5-3e4694c554a08f71545e",
-          "file": "example.spec.ts",
-          "line": 10,
-          "column": 5
-        }
-      ]
-    },
-    {
-      "title": "Functional Testing\\Cart\\Add_to_Cart.spec.ts",
-      "file": "Functional Testing/Cart/Add_to_Cart.spec.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [
-        {
-          "title": "Checking Add to Cart functionality",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "",
-              "projectName": "",
-              "results": [],
-              "status": "skipped"
-            }
-          ],
-          "id": "241deb56097784a1f254-2f5a48a6274c1f6f0569",
-          "file": "Functional Testing/Cart/Add_to_Cart.spec.ts",
-          "line": 22,
-          "column": 5
-        }
-      ]
-    },
-    {
-      "title": "Functional Testing\\Cart\\Redirect_to_Cart.spec.ts",
-      "file": "Functional Testing/Cart/Redirect_to_Cart.spec.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [
-        {
-          "title": "Checking if the cart is accessible",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "",
-              "projectName": "",
-              "results": [],
-              "status": "skipped"
-            }
-          ],
-          "id": "1539299cd6ab480a7671-674c0584fd76a358e4d0",
-          "file": "Functional Testing/Cart/Redirect_to_Cart.spec.ts",
-          "line": 5,
-          "column": 5
-        }
-      ]
-    },
-    {
-      "title": "Functional Testing\\Cart\\Remove_to_Cart.spec.ts",
-      "file": "Functional Testing/Cart/Remove_to_Cart.spec.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [
-        {
-          "title": "Checking if the cart is accessible",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "",
-              "projectName": "",
-              "results": [],
-              "status": "skipped"
-            }
-          ],
-          "id": "c370b5c68f642c2df71a-a78e016ae8e743863473",
-          "file": "Functional Testing/Cart/Remove_to_Cart.spec.ts",
-          "line": 10,
-          "column": 5
-        }
-      ]
-    },
-    {
-      "title": "Functional Testing\\Checkout\\Redirection_to_Checkout_Page.spec.ts",
-      "file": "Functional Testing/Checkout/Redirection_to_Checkout_Page.spec.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [
-        {
-          "title": "Redirection to Checkout Page",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "",
-              "projectName": "",
-              "results": [],
-              "status": "skipped"
-            }
-          ],
-          "id": "3a8d5b01d95ef2439ddc-20ecd92f4caf7f64d506",
-          "file": "Functional Testing/Checkout/Redirection_to_Checkout_Page.spec.ts",
-          "line": 5,
-          "column": 5
-        }
-      ]
-    },
-    {
-      "title": "Functional Testing\\Checkout\\Verify_Checkout_CancelButton.spec.ts",
-      "file": "Functional Testing/Checkout/Verify_Checkout_CancelButton.spec.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [
-        {
-          "title": "Verify Checkout Failed - All Field Requirements Missing",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "",
-              "projectName": "",
-              "results": [],
-              "status": "skipped"
-            }
-          ],
-          "id": "79c673da9df157c60c0f-f062adf135299d3c4bd2",
-          "file": "Functional Testing/Checkout/Verify_Checkout_CancelButton.spec.ts",
-          "line": 5,
-          "column": 5
-        }
-      ]
-    },
-    {
-      "title": "Functional Testing\\Checkout\\Verify_Checkout_Continue_Button.spec.ts",
-      "file": "Functional Testing/Checkout/Verify_Checkout_Continue_Button.spec.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [
-        {
-          "title": "Verify Checkout Continue Button",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "",
-              "projectName": "",
-              "results": [],
-              "status": "skipped"
-            }
-          ],
-          "id": "de2723989de9c3206972-0e00efa2646d3f09ac48",
-          "file": "Functional Testing/Checkout/Verify_Checkout_Continue_Button.spec.ts",
-          "line": 5,
-          "column": 5
-        }
-      ]
-    },
-    {
-      "title": "Functional Testing\\Checkout\\Verify_Checkout_Failed_All_FieldForm_Requirements.spec.ts",
-      "file": "Functional Testing/Checkout/Verify_Checkout_Failed_All_FieldForm_Requirements.spec.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [
-        {
-          "title": "Verify Checkout Failed - All Field Requirements Missing",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "",
-              "projectName": "",
-              "results": [],
-              "status": "skipped"
-            }
-          ],
-          "id": "34a8fcf6ccde9708c0e9-1def1f23e03a8c052b24",
-          "file": "Functional Testing/Checkout/Verify_Checkout_Failed_All_FieldForm_Requirements.spec.ts",
-          "line": 5,
-          "column": 5
-        }
-      ]
-    },
-    {
-      "title": "Functional Testing\\Checkout\\Verify_Checkout_Failed_FirstName_Missing.spec.ts",
-      "file": "Functional Testing/Checkout/Verify_Checkout_Failed_FirstName_Missing.spec.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [
-        {
-          "title": "Verify Checkout Failed - First Name Missing",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "",
-              "projectName": "",
-              "results": [],
-              "status": "skipped"
-            }
-          ],
-          "id": "de51174478a717cdb1ca-e6196f7b6b58532b7916",
-          "file": "Functional Testing/Checkout/Verify_Checkout_Failed_FirstName_Missing.spec.ts",
-          "line": 5,
-          "column": 5
-        }
-      ]
-    },
-    {
-      "title": "Functional Testing\\Checkout\\Verify_Checkout_Failed_LastName_Missing.spec.ts",
-      "file": "Functional Testing/Checkout/Verify_Checkout_Failed_LastName_Missing.spec.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [
-        {
-          "title": "Verify Checkout Failed - Last Name Missing",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "",
-              "projectName": "",
-              "results": [],
-              "status": "skipped"
-            }
-          ],
-          "id": "4d17969b12dfc22bd5b3-292638dd59bbc0aa026b",
-          "file": "Functional Testing/Checkout/Verify_Checkout_Failed_LastName_Missing.spec.ts",
-          "line": 5,
-          "column": 5
-        }
-      ]
-    },
-    {
-      "title": "Functional Testing\\Checkout\\Verify_Checkout_Failed_Zipcode_Missing.spec.ts",
-      "file": "Functional Testing/Checkout/Verify_Checkout_Failed_Zipcode_Missing.spec.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [
-        {
-          "title": "Verify Checkout Failed - Zipcode Name Missing",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "",
-              "projectName": "",
-              "results": [],
-              "status": "skipped"
-            }
-          ],
-          "id": "411890e27748fb19e742-37cce8b78339afcf52aa",
-          "file": "Functional Testing/Checkout/Verify_Checkout_Failed_Zipcode_Missing.spec.ts",
-          "line": 5,
-          "column": 5
-        }
-      ]
-    },
-    {
-      "title": "Functional Testing\\Checkout\\Verify_Checkout_Invalid_PostalCode.spec.ts",
-      "file": "Functional Testing/Checkout/Verify_Checkout_Invalid_PostalCode.spec.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [
-        {
-          "title": "Verify Checkout Invalid Postal Code",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "",
-              "projectName": "",
-              "results": [],
-              "status": "skipped"
-            }
-          ],
-          "id": "7e7bb91733b47ddaf65e-8a3820cd6a0c16c8d205",
-          "file": "Functional Testing/Checkout/Verify_Checkout_Invalid_PostalCode.spec.ts",
-          "line": 5,
-          "column": 5
-        }
-      ]
-    },
-    {
-      "title": "Functional Testing\\Checkout\\Verify_Checkout_LongInput_RequiredField.spec.ts",
-      "file": "Functional Testing/Checkout/Verify_Checkout_LongInput_RequiredField.spec.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [
-        {
-          "title": "Verify Checkout Excessive Input in Required Fields",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "",
-              "projectName": "",
-              "results": [],
-              "status": "skipped"
-            }
-          ],
-          "id": "d47256f2b9ec1f0bb019-4a5f00afd28348f6455b",
-          "file": "Functional Testing/Checkout/Verify_Checkout_LongInput_RequiredField.spec.ts",
-          "line": 5,
-          "column": 5
-        }
-      ]
-    },
-    {
-      "title": "Functional Testing\\Checkout\\Verify_Checkout_Page_Requirement.spec.ts",
-      "file": "Functional Testing/Checkout/Verify_Checkout_Page_Requirement.spec.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [
-        {
-          "title": "Verify Checkout Page Requirements",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "",
-              "projectName": "",
-              "results": [],
-              "status": "skipped"
-            }
-          ],
-          "id": "1a5a727a6f3e1f8e23c1-999b2534931878f858c3",
-          "file": "Functional Testing/Checkout/Verify_Checkout_Page_Requirement.spec.ts",
-          "line": 5,
-          "column": 5
-        }
-      ]
-    },
-    {
-      "title": "Functional Testing\\Checkout\\Verify_Checkout_SpecialCharacter_FirstName.spec.ts",
-      "file": "Functional Testing/Checkout/Verify_Checkout_SpecialCharacter_FirstName.spec.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [
-        {
-          "title": "Verify Checkout First Name Field Special Characters",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "",
-              "projectName": "",
-              "results": [],
-              "status": "skipped"
-            }
-          ],
-          "id": "d18148538a5c1aca1309-9e1b5abda3985f3ae2ed",
-          "file": "Functional Testing/Checkout/Verify_Checkout_SpecialCharacter_FirstName.spec.ts",
-          "line": 5,
-          "column": 5
-        }
-      ]
-    },
-    {
-      "title": "Functional Testing\\Checkout\\Verify_Checkout_SpecialCharacter_LastName.spec.ts",
-      "file": "Functional Testing/Checkout/Verify_Checkout_SpecialCharacter_LastName.spec.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [
-        {
-          "title": "Verify Checkout Last Name Field Special Characters",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "",
-              "projectName": "",
-              "results": [],
-              "status": "skipped"
-            }
-          ],
-          "id": "607b3f54a7d88ba264c5-8f29fc68c87cec412b6d",
-          "file": "Functional Testing/Checkout/Verify_Checkout_SpecialCharacter_LastName.spec.ts",
-          "line": 5,
-          "column": 5
-        }
-      ]
-    },
-    {
-      "title": "Functional Testing\\Checkout\\Verify_Checkout_Workflow.spec.ts",
-      "file": "Functional Testing/Checkout/Verify_Checkout_Workflow.spec.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [
-        {
-          "title": "Verify complete checkout workflow for John Doe",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "",
-              "projectName": "",
-              "results": [],
-              "status": "skipped"
-            }
-          ],
-          "id": "cba6b72826bd7a68193f-b462048b1319a669c1ec",
-          "file": "Functional Testing/Checkout/Verify_Checkout_Workflow.spec.ts",
-          "line": 25,
-          "column": 7
-        },
-        {
-          "title": "Verify complete checkout workflow for Jane Smith",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "",
-              "projectName": "",
-              "results": [],
-              "status": "skipped"
-            }
-          ],
-          "id": "cba6b72826bd7a68193f-b9b8a3c8eb93c1b5b19a",
-          "file": "Functional Testing/Checkout/Verify_Checkout_Workflow.spec.ts",
-          "line": 25,
-          "column": 7
-        },
-        {
-          "title": "Verify complete checkout workflow for Alex Johnson",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "",
-              "projectName": "",
-              "results": [],
-              "status": "skipped"
-            }
-          ],
-          "id": "cba6b72826bd7a68193f-b6be7d25829667049d0f",
-          "file": "Functional Testing/Checkout/Verify_Checkout_Workflow.spec.ts",
-          "line": 25,
-          "column": 7
-        }
-      ]
-    },
     {
       "title": "Functional Testing\\LoginPage\\login.spec.ts",
       "file": "Functional Testing/LoginPage/login.spec.ts",
@@ -617,8 +88,22 @@
               "expectedStatus": "passed",
               "projectId": "",
               "projectName": "",
-              "results": [],
-              "status": "skipped"
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2119,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-23T18:59:53.100Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
             }
           ],
           "id": "575bcaf500ab25b43cdd-e8241932b3d307b4af52",
@@ -637,8 +122,22 @@
               "expectedStatus": "passed",
               "projectId": "",
               "projectName": "",
-              "results": [],
-              "status": "skipped"
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4786,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-23T18:59:56.014Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
             }
           ],
           "id": "575bcaf500ab25b43cdd-7d348892ba62890e25df",
@@ -657,8 +156,22 @@
               "expectedStatus": "passed",
               "projectId": "",
               "projectName": "",
-              "results": [],
-              "status": "skipped"
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6945,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-23T19:00:00.899Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
             }
           ],
           "id": "575bcaf500ab25b43cdd-e59f3ad0ef91733de7b4",
@@ -677,8 +190,22 @@
               "expectedStatus": "passed",
               "projectId": "",
               "projectName": "",
-              "results": [],
-              "status": "skipped"
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2459,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-23T19:00:07.959Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
             }
           ],
           "id": "575bcaf500ab25b43cdd-77cc7d34f0dda2fcab23",
@@ -697,405 +224,27 @@
               "expectedStatus": "passed",
               "projectId": "",
               "projectName": "",
-              "results": [],
-              "status": "skipped"
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7050,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-23T19:00:10.492Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
             }
           ],
           "id": "575bcaf500ab25b43cdd-7227b1041b20ca9a5088",
           "file": "Functional Testing/LoginPage/login.spec.ts",
           "line": 32,
-          "column": 5
-        }
-      ]
-    },
-    {
-      "title": "Functional Testing\\ProductPage\\HeaderFooter.spec.ts",
-      "file": "Functional Testing/ProductPage/HeaderFooter.spec.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [
-        {
-          "title": "Checking if the header and footer are visible",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "",
-              "projectName": "",
-              "results": [],
-              "status": "skipped"
-            }
-          ],
-          "id": "9e45686944d3f41dfe15-cee544ef3b75c06a44c1",
-          "file": "Functional Testing/ProductPage/HeaderFooter.spec.ts",
-          "line": 5,
-          "column": 5
-        }
-      ]
-    },
-    {
-      "title": "Functional Testing\\ProductPage\\LandingPage.spec.ts",
-      "file": "Functional Testing/ProductPage/LandingPage.spec.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [
-        {
-          "title": "After Login the user is redirected to the inventory page",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "",
-              "projectName": "",
-              "results": [],
-              "status": "skipped"
-            }
-          ],
-          "id": "95b6b5f9e37bf067cbaa-f1345ea0729f1ebb3533",
-          "file": "Functional Testing/ProductPage/LandingPage.spec.ts",
-          "line": 5,
-          "column": 5
-        }
-      ]
-    },
-    {
-      "title": "Functional Testing\\ProductPage\\Product_Filter\\Filter_A2Z.spec.ts",
-      "file": "Functional Testing/ProductPage/Product_Filter/Filter_A2Z.spec.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [
-        {
-          "title": "Test the product filter A to Z",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "",
-              "projectName": "",
-              "results": [],
-              "status": "skipped"
-            }
-          ],
-          "id": "46941487606fe9ff588b-400a7415927c859a61ad",
-          "file": "Functional Testing/ProductPage/Product_Filter/Filter_A2Z.spec.ts",
-          "line": 5,
-          "column": 5
-        }
-      ]
-    },
-    {
-      "title": "Functional Testing\\ProductPage\\Product_Filter\\Filter_Highest2LowestPrice.spec.ts",
-      "file": "Functional Testing/ProductPage/Product_Filter/Filter_Highest2LowestPrice.spec.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [
-        {
-          "title": "Test the product filter from highest to lowest price",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "",
-              "projectName": "",
-              "results": [],
-              "status": "skipped"
-            }
-          ],
-          "id": "d9d94a5908e608d45432-9d6ab44d0f6b52b9c14c",
-          "file": "Functional Testing/ProductPage/Product_Filter/Filter_Highest2LowestPrice.spec.ts",
-          "line": 5,
-          "column": 5
-        }
-      ]
-    },
-    {
-      "title": "Functional Testing\\ProductPage\\Product_Filter\\Filter_Lowest2Highest.spec.ts",
-      "file": "Functional Testing/ProductPage/Product_Filter/Filter_Lowest2Highest.spec.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [
-        {
-          "title": "Test the product filter from lowest to highest price",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "",
-              "projectName": "",
-              "results": [],
-              "status": "skipped"
-            }
-          ],
-          "id": "ba84d8df622b77585e6d-83d05b06607b8a1a090e",
-          "file": "Functional Testing/ProductPage/Product_Filter/Filter_Lowest2Highest.spec.ts",
-          "line": 5,
-          "column": 5
-        }
-      ]
-    },
-    {
-      "title": "Functional Testing\\ProductPage\\Product_Filter\\Filter_Z2A.spec.ts",
-      "file": "Functional Testing/ProductPage/Product_Filter/Filter_Z2A.spec.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [
-        {
-          "title": "Test the product filter Z to A",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "",
-              "projectName": "",
-              "results": [],
-              "status": "skipped"
-            }
-          ],
-          "id": "a1e6942e83c9ee132ed5-4d26607026b9ece8e4a4",
-          "file": "Functional Testing/ProductPage/Product_Filter/Filter_Z2A.spec.ts",
-          "line": 5,
-          "column": 5
-        }
-      ]
-    },
-    {
-      "title": "Functional Testing\\ProductPage\\Remove_Add_to_Cart.spec.ts",
-      "file": "Functional Testing/ProductPage/Remove_Add_to_Cart.spec.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [
-        {
-          "title": "Add products to cart, verify cart, remove one from inventory page, and verify remaining cart item",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "",
-              "projectName": "",
-              "results": [],
-              "status": "skipped"
-            }
-          ],
-          "id": "b909d59fa5a26b79e468-0805a359182d52b696c9",
-          "file": "Functional Testing/ProductPage/Remove_Add_to_Cart.spec.ts",
-          "line": 5,
-          "column": 5
-        }
-      ]
-    },
-    {
-      "title": "Functional Testing\\ProductPage\\ScrapeProductPage.spec.ts",
-      "file": "Functional Testing/ProductPage/ScrapeProductPage.spec.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [
-        {
-          "title": "Scrape Product Page to Show What are the Products Listed for Sale",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "",
-              "projectName": "",
-              "results": [],
-              "status": "skipped"
-            }
-          ],
-          "id": "7845b6fdcbe5bf59e7da-78ed2e8999c566730b10",
-          "file": "Functional Testing/ProductPage/ScrapeProductPage.spec.ts",
-          "line": 5,
-          "column": 5
-        }
-      ]
-    },
-    {
-      "title": "Functional Testing\\Sidebar\\Sidebar_AboutMe.spec.ts",
-      "file": "Functional Testing/Sidebar/Sidebar_AboutMe.spec.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [
-        {
-          "title": "Sidebar About Me Button Functionality",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "",
-              "projectName": "",
-              "results": [],
-              "status": "skipped"
-            }
-          ],
-          "id": "ec0f26b1f31d4f0184db-7c4df5b6a318258a3be6",
-          "file": "Functional Testing/Sidebar/Sidebar_AboutMe.spec.ts",
-          "line": 5,
-          "column": 5
-        }
-      ]
-    },
-    {
-      "title": "Functional Testing\\Sidebar\\Sidebar_AllItems.spec.ts",
-      "file": "Functional Testing/Sidebar/Sidebar_AllItems.spec.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [
-        {
-          "title": "Sidebar All item Button Functionality",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "",
-              "projectName": "",
-              "results": [],
-              "status": "skipped"
-            }
-          ],
-          "id": "fe7b1e87cf57592e9761-bcdf2041077f1dba8f33",
-          "file": "Functional Testing/Sidebar/Sidebar_AllItems.spec.ts",
-          "line": 4,
-          "column": 5
-        }
-      ]
-    },
-    {
-      "title": "Functional Testing\\Sidebar\\Sidebar_Button.spec.ts",
-      "file": "Functional Testing/Sidebar/Sidebar_Button.spec.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [
-        {
-          "title": "Sidebar button functionality",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "",
-              "projectName": "",
-              "results": [],
-              "status": "skipped"
-            }
-          ],
-          "id": "1b3cd301a78ec43ddd9e-7837f14dfc6f4aa4bb08",
-          "file": "Functional Testing/Sidebar/Sidebar_Button.spec.ts",
-          "line": 5,
-          "column": 5
-        }
-      ]
-    },
-    {
-      "title": "Functional Testing\\Sidebar\\Sidebar_Logout.spec.ts",
-      "file": "Functional Testing/Sidebar/Sidebar_Logout.spec.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [
-        {
-          "title": "Sidebar Logout Functionality",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "",
-              "projectName": "",
-              "results": [],
-              "status": "skipped"
-            }
-          ],
-          "id": "219be35f8ba5d4f4d673-47c93002414ef47a2aef",
-          "file": "Functional Testing/Sidebar/Sidebar_Logout.spec.ts",
-          "line": 5,
-          "column": 5
-        }
-      ]
-    },
-    {
-      "title": "Functional Testing\\Sidebar\\Sidebar_ResetApp.spec.ts",
-      "file": "Functional Testing/Sidebar/Sidebar_ResetApp.spec.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [
-        {
-          "title": "Sidebar Reset App Functionality",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "",
-              "projectName": "",
-              "results": [],
-              "status": "skipped"
-            }
-          ],
-          "id": "d02cf19479819102069d-8f17f5c8bd69332eb67d",
-          "file": "Functional Testing/Sidebar/Sidebar_ResetApp.spec.ts",
-          "line": 5,
-          "column": 5
-        }
-      ]
-    },
-    {
-      "title": "Functional Testing\\Sidebar\\Sidebar_X_Button.spec.ts",
-      "file": "Functional Testing/Sidebar/Sidebar_X_Button.spec.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [
-        {
-          "title": "Sidebar \"X\" button functionality",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "",
-              "projectName": "",
-              "results": [],
-              "status": "skipped"
-            }
-          ],
-          "id": "090b8acf5a1bb4f08415-82347f8a7c76bec34918",
-          "file": "Functional Testing/Sidebar/Sidebar_X_Button.spec.ts",
-          "line": 5,
           "column": 5
         }
       ]
@@ -1108,7 +257,7 @@
       "specs": [
         {
           "title": "login page reaches DOM content loaded within the performance budget",
-          "ok": true,
+          "ok": false,
           "tags": [],
           "tests": [
             {
@@ -1117,8 +266,62 @@
               "expectedStatus": "passed",
               "projectId": "",
               "projectName": "",
-              "results": [],
-              "status": "skipped"
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "failed",
+                  "duration": 23552,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m10000\u001b[39m\nReceived:   \u001b[31m21951.399999976158\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m10000\u001b[39m\nReceived:   \u001b[31m21951.399999976158\u001b[39m\n    at C:\\Users\\razel\\Documents\\GitHub\\SauceDemo-Automation-Practice\\tests\\Non-Functional Test\\Performance\\Page_Load_Performance.spec.ts:21:28",
+                    "location": {
+                      "file": "C:\\Users\\razel\\Documents\\GitHub\\SauceDemo-Automation-Practice\\tests\\Non-Functional Test\\Performance\\Page_Load_Performance.spec.ts",
+                      "column": 28,
+                      "line": 21
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 19 |\u001b[39m     contentType\u001b[33m:\u001b[39m \u001b[32m'application/json'\u001b[39m\u001b[33m,\u001b[39m\n \u001b[90m 20 |\u001b[39m   })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 21 |\u001b[39m   expect(domContentLoaded)\u001b[33m.\u001b[39mtoBeLessThan(\u001b[35m10000\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 22 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\razel\\Documents\\GitHub\\SauceDemo-Automation-Practice\\tests\\Non-Functional Test\\Performance\\Page_Load_Performance.spec.ts",
+                        "column": 28,
+                        "line": 21
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m10000\u001b[39m\nReceived:   \u001b[31m21951.399999976158\u001b[39m\n\n\u001b[0m \u001b[90m 19 |\u001b[39m     contentType\u001b[33m:\u001b[39m \u001b[32m'application/json'\u001b[39m\u001b[33m,\u001b[39m\n \u001b[90m 20 |\u001b[39m   })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 21 |\u001b[39m   expect(domContentLoaded)\u001b[33m.\u001b[39mtoBeLessThan(\u001b[35m10000\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 22 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\razel\\Documents\\GitHub\\SauceDemo-Automation-Practice\\tests\\Non-Functional Test\\Performance\\Page_Load_Performance.spec.ts:21:28\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-23T18:59:53.097Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "performance-metrics",
+                      "contentType": "application/json",
+                      "body": "eyJtZXRyaWMiOiJET00gY29udGVudCBsb2FkZWQiLCJ2YWx1ZSI6MjE5NTEuMzk5OTk5OTc2MTU4LCJ1bml0IjoibXMiLCJidWRnZXQiOjEwMDAwfQ=="
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\razel\\Documents\\GitHub\\SauceDemo-Automation-Practice\\test-results\\Non-Functional Test-Perfor-b10d9-thin-the-performance-budget\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\razel\\Documents\\GitHub\\SauceDemo-Automation-Practice\\test-results\\Non-Functional Test-Perfor-b10d9-thin-the-performance-budget\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\razel\\Documents\\GitHub\\SauceDemo-Automation-Practice\\tests\\Non-Functional Test\\Performance\\Page_Load_Performance.spec.ts",
+                    "column": 28,
+                    "line": 21
+                  }
+                }
+              ],
+              "status": "unexpected"
             }
           ],
           "id": "a0b086e22adad5f8fa2d-2757b756f4108750395a",
@@ -1127,52 +330,15 @@
           "column": 5
         }
       ]
-    },
-    {
-      "title": "Non-Functional Test\\Responsive\\Responsive_LoginPage.spec.ts",
-      "file": "Non-Functional Test/Responsive/Responsive_LoginPage.spec.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [],
-      "suites": [
-        {
-          "title": "SauceDemo responsive behavior",
-          "file": "Non-Functional Test/Responsive/Responsive_LoginPage.spec.ts",
-          "line": 4,
-          "column": 6,
-          "specs": [
-            {
-              "title": "login page remains usable at mobile and desktop widths",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "",
-                  "projectName": "",
-                  "results": [],
-                  "status": "skipped"
-                }
-              ],
-              "id": "e7e69453bcacb76f1a86-aa544566e8bcfbfa92b3",
-              "file": "Non-Functional Test/Responsive/Responsive_LoginPage.spec.ts",
-              "line": 5,
-              "column": 7
-            }
-          ]
-        }
-      ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-08-23T15:21:29.014Z",
-    "duration": 1680.7740000000001,
-    "expected": 0,
-    "skipped": 41,
-    "unexpected": 0,
+    "startTime": "2026-08-23T18:59:51.910Z",
+    "duration": 26581.065,
+    "expected": 5,
+    "skipped": 0,
+    "unexpected": 1,
     "flaky": 0
   }
 }
